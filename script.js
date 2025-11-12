@@ -1,7 +1,8 @@
 
 // Typing Effect
+// Typing Effect
 const typed = new Typed(".typed-text", {
-  strings: ["Santosh Kumar Sah", "a Web Developer", "a CSE(AIML) Student"],
+  strings: ["Santosh Kumar Sah", "a Web Developer", "a CSE(AIML) Student", "an ML Enthusiast"],
   typeSpeed: 60,
   backSpeed: 40,
   loop: true
