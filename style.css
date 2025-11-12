@@ -2,11 +2,17 @@ body {
   scroll-behavior: smooth;
   background-color: #121212;
   color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-weight: 600;
 }
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('https://source.unsplash.com/1600x900/?code,technology') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,12 +21,25 @@ body {
 .card {
   background-color: #1e1e1e;
   color: white;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+.project-card i {
+  transition: transform 0.3s;
+}
+.project-card:hover i {
+  transform: scale(1.2);
 }
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   z-index: 999;
   background-color: #007bff;
   color: white;
@@ -29,4 +48,8 @@ body {
   padding: 10px 15px;
   display: none;
   cursor: pointer;
+  transition: all 0.3s;
+}
+#scrollTopBtn:hover {
+  background-color: #0056b3;
 }
